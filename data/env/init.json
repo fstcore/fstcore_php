@@ -1,0 +1,7 @@
+{
+    "domain" : "check-hostinfo.my.id",
+    "ssl" : true,
+    "force_ssl" : true,
+    "theme" : "check_hostinfo",
+    "support_email" : "admin@check-hostinfo.my.id"
+}

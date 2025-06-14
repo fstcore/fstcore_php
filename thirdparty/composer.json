@@ -1,0 +1,8 @@
+{
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "whichbrowser/parser": "^2.1",
+        "fhferreira/php-dig": "^1.1",
+        "geerlingguy/ping": "^1.2"
+    }
+}

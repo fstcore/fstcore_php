@@ -1,4 +1,5 @@
 <?php
+require_once($basedir . '/include/lib/util/3rdparty.php');
 
 class SpeechRecognation{
 
@@ -8,6 +9,11 @@ class SpeechRecognation{
     function __construct()
     {
         
+    }
+
+    public function speech()
+    {
+
     }
 
     function __destruct()

@@ -51,5 +51,7 @@ class fstcore{
     function __destruct(){
 
     }
+    
 }
+
 ?>

@@ -19,7 +19,7 @@ This is an sdk platform written in PHP language runtime, these function is for s
 
 ## Installation
 
-Install fstcore_cpp with git
+Install fstcore_php with git clone
 
 ```bash
   git clone --recurse-submodule https://github.com/fstcore/fstcore_php.git

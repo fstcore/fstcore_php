@@ -5,9 +5,10 @@ class Image{
 
     public $debug;
     public $fstcore;
+    private $ffmpeg_app = ""
     
-    function __init(){
-
+    function __construct(){
+        $this->ffmpeg_app = $fstcore->data
     }
 
     function convertImage(string $sourcePath, string $destinationPath, string $outputFormat, int $quality = 90): bool {

@@ -64,6 +64,7 @@ class ComposerStaticInit08b3647e1776c59d66c3c92bde33c612
             'GuzzleHttp\\' => 11,
             'Grpc\\Gcp\\' => 9,
             'Grpc\\' => 5,
+            'Gos\\Component\\Yolo\\' => 19,
             'Google\\Type\\' => 12,
             'Google\\Rpc\\' => 11,
             'Google\\Protobuf\\' => 16,
@@ -208,6 +209,10 @@ class ComposerStaticInit08b3647e1776c59d66c3c92bde33c612
         'Grpc\\' => 
         array (
             0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
+        ),
+        'Gos\\Component\\Yolo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gos/yolo/src',
         ),
         'Google\\Type\\' => 
         array (

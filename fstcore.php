@@ -45,7 +45,7 @@ class fstcore{
     }
 
     function open_config(){
-        $this->config = $this->util->filesystem->readfile($this->util->data->init, "init.json");
+        $this->config = $this->util->data->init;
     }
 
     function __destruct(){

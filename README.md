@@ -22,28 +22,24 @@ This is an sdk platform written in PHP language runtime, these function is for s
 Install fstcore_cpp with git
 
 ```bash
-  git clone --recurse-submodule https://github.com/fstcore/fstcore_cpp.git
-  cd fstcore_cpp
+  git clone --recurse-submodule https://github.com/fstcore/fstcore_php.git
+  cd fstcore_php
 ```
     
 ## Usage/Examples
 
 ```PHP
-#include "fstcore/fstcore.cpp"
+use_once 'fstcore-php/fstcore.php'
 
-int main(argc, char* argv[]) {
-  fstcore fstcore = fstcore();
-  fstcore.init();
-  fstcore.util.text.base64encode("Hello World !");
-  return 0;
-}
+fstcore fst = new fstcore();
+echo fst.util.encoder.base64_encode("Hello World");
 ```
 
 ## Features
 
 - Database
 - Encoder Decoder / Text / RegEx
-- Audio / Video
+- Audio / Image / Video
 - Socket / Websocket / HTTP
 - System / Proccess
 - Debug / Analysis

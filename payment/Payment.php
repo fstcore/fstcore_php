@@ -1,9 +1,9 @@
 <?php
 
-$basedir = preg_replace('/\/include.*/', '', __DIR__);
-require_once($basedir.'/include/lib/payment/bank/Bank.php');
-require_once($basedir.'/include/lib/payment/credit/Credit.php');
-require_once($basedir.'/include/lib/payment/crypto/Crypto.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir.'/lib/payment/bank/Bank.php');
+require_once($basedir.'/lib/payment/credit/Credit.php');
+require_once($basedir.'/lib/payment/crypto/Crypto.php');
 
 class Payment{
 

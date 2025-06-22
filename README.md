@@ -1,5 +1,5 @@
 
-![Logo](https://i.ibb.co/Y7YdPhkS/fstcore-php.png)
+![Logo](https://i.ibb.co/k6SjbyqS/fstcore.png)
 
 
 # fstcore for PHP
@@ -14,7 +14,7 @@ This is an sdk platform written in PHP language runtime, these function is for s
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://https://fstcore.nex.sh/fstcore/docs)
 
 
 ## Installation
@@ -44,16 +44,10 @@ echo fst.util.encoder.base64_encode("Hello World");
 - System / Proccess
 - Debug / Analysis
 
-## Acknowledgements
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
 
 ## Badges
 
-License: [shields.io](https://fstcore.nex.sh/)
+License: [fstcore.nex.sh](https://fstcore.nex.sh/LICENSE.html)
 
 [![MIT License](https://img.fstcore.nex.sh/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GPLv3 License](https://img.fstcore.nex.sh/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)

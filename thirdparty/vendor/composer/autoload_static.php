@@ -71,6 +71,7 @@ class ComposerStaticInit08b3647e1776c59d66c3c92bde33c612
             'Google\\LongRunning\\' => 19,
             'Google\\Iam\\' => 11,
             'Google\\Cloud\\Vision\\' => 20,
+            'Google\\Cloud\\Speech\\' => 20,
             'Google\\Cloud\\Core\\' => 18,
             'Google\\Cloud\\' => 13,
             'Google\\Auth\\' => 12,
@@ -84,6 +85,7 @@ class ComposerStaticInit08b3647e1776c59d66c3c92bde33c612
             'GPBMetadata\\Google\\Logging\\' => 27,
             'GPBMetadata\\Google\\Iam\\' => 23,
             'GPBMetadata\\Google\\Cloud\\Vision\\' => 32,
+            'GPBMetadata\\Google\\Cloud\\Speech\\' => 32,
             'GPBMetadata\\Google\\Cloud\\' => 25,
             'GPBMetadata\\Google\\Api\\' => 23,
             'GPBMetadata\\ApiCore\\' => 20,
@@ -238,6 +240,10 @@ class ComposerStaticInit08b3647e1776c59d66c3c92bde33c612
         array (
             0 => __DIR__ . '/..' . '/google/cloud-vision/src',
         ),
+        'Google\\Cloud\\Speech\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/cloud-speech/src',
+        ),
         'Google\\Cloud\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/cloud-core/src',
@@ -289,6 +295,10 @@ class ComposerStaticInit08b3647e1776c59d66c3c92bde33c612
         'GPBMetadata\\Google\\Cloud\\Vision\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/cloud-vision/metadata',
+        ),
+        'GPBMetadata\\Google\\Cloud\\Speech\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/cloud-speech/metadata',
         ),
         'GPBMetadata\\Google\\Cloud\\' => 
         array (

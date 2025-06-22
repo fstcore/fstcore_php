@@ -1,11 +1,11 @@
 <?php
 
-$basedir = preg_replace('/\/include.*/', '', __DIR__);
-require_once($basedir.'/include/lib/datacore/Datacore.php');
-require_once($basedir.'/include/lib/payment/Payment.php');
-require_once($basedir.'/include/lib/sdk/Sdk.php');
-require_once($basedir.'/include/lib/ui/Ui.php');
-require_once($basedir.'/include/lib/util/Util.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir.'/lib/datacore/Datacore.php');
+require_once($basedir.'/lib/payment/Payment.php');
+require_once($basedir.'/lib/sdk/Sdk.php');
+require_once($basedir.'/lib/ui/Ui.php');
+require_once($basedir.'/lib/util/Util.php');
 
 class fstcore{
 

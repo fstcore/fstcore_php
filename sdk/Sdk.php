@@ -1,15 +1,16 @@
 <?php
 
-$basedir = preg_replace('/\/include.*/', '', __DIR__);
-require_once($basedir.'/include/lib/sdk/binance/Binance.php');
-require_once($basedir.'/include/lib/sdk/censys/Censys.php');
-require_once($basedir.'/include/lib/sdk/dropbox/Dropbox.php');
-require_once($basedir.'/include/lib/sdk/dubox/Dubox.php');
-require_once($basedir.'/include/lib/sdk/fstrade/Fstrade.php');
-require_once($basedir.'/include/lib/sdk/indodax/Indodax.php');
-require_once($basedir.'/include/lib/sdk/payeer/Payeer.php');
-require_once($basedir.'/include/lib/sdk/shodan/Shodan.php');
-require_once($basedir.'/include/lib/sdk/tokocrypto/Tokocrypto.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+
+require_once($basedir.'/lib/sdk/binance/Binance.php');
+require_once($basedir.'/lib/sdk/censys/Censys.php');
+require_once($basedir.'/lib/sdk/dropbox/Dropbox.php');
+require_once($basedir.'/lib/sdk/dubox/Dubox.php');
+require_once($basedir.'/lib/sdk/fstrade/Fstrade.php');
+require_once($basedir.'/lib/sdk/indodax/Indodax.php');
+require_once($basedir.'/lib/sdk/payeer/Payeer.php');
+require_once($basedir.'/lib/sdk/shodan/Shodan.php');
+require_once($basedir.'/lib/sdk/tokocrypto/Tokocrypto.php');
 
 class Sdk{
 

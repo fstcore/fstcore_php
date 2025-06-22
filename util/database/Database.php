@@ -1,6 +1,7 @@
 <?php
-require_once($basedir.'/include/lib/util/encoder/Encoder.php');
-require_once($basedir.'/include/lib/util/filesystem/FileSystem.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir.'/lib/util/encoder/Encoder.php');
+require_once($basedir.'/lib/util/filesystem_/FileSystem_.php');
 
 /**
  * DATABASE

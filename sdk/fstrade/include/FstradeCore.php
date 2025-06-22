@@ -1,7 +1,7 @@
 <?php
 
-$basedir = preg_replace('/\/include.*/', '', __DIR__);
-include($basedir.'/FstradeOpt.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+include($basedir.'/lib/sdk/fstrade/include/FstradeOpt.php');
 
 class FstradeCore
 {

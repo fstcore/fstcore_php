@@ -1,11 +1,11 @@
 <?php
 
-abstract class SocketCallback {
+/*abstract class SocketCallback {
     /*abstract public function onOpen(string $client_ip, string $data): void;
     abstract public function onClose(string $client_ip, string $data): void;
     abstract public function onError(string $client_ip, string $data): void;
     abstract public function onRead(string $client_ip, string $data_byte): void;*/
-}
+}*/
 
 class Socket
 {

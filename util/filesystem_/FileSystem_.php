@@ -1,5 +1,6 @@
 <?php
-require_once($basedir . '/include/lib/util/text/Text.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/util/text/Text.php');
 
 class FileSystem_
 {

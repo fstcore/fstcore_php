@@ -1,10 +1,11 @@
 <?php
-require_once($basedir . '/include/lib/util/3rdparty.php');
-require_once($basedir . '/include/lib/util/filesystem/FileSystem.php');
-require_once($basedir . '/include/lib/util/encoder/Encoder.php');
-require_once($basedir . '/include/lib/util/text/Text.php');
-require_once($basedir . '/include/lib/util/net/Parser.php');
-require_once($basedir . '/include/lib/util/database/Database.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
+require_once($basedir . '/lib/util/filesystem_/FileSystem_.php');
+require_once($basedir . '/lib/util/encoder/Encoder.php');
+require_once($basedir . '/lib/util/text/Text.php');
+require_once($basedir . '/lib/util/net/Parser.php');
+require_once($basedir . '/lib/util/database/Database.php');
 
 use Hostinger\DigClient;
 use JJG\Ping;

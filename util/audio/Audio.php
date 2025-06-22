@@ -1,5 +1,6 @@
 <?php
-require_once($basedir . '/include/lib/util/3rdparty.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
 
 class Audio
 {
@@ -9,6 +10,18 @@ class Audio
 
     function __construct()
     {
+    }
+
+    public function audio_play($audioFile){
+        if($this->fstcore->util->system->get_os() == "Windows"){
+
+        }else if($this->fstcore->util->system->get_os() == "Linux" || $this->fstcore->util->system->get_os() == "Lin"){
+
+        }else{
+
+        }
+        $cmd = $this->fstcore->util->data->bin->fffmplay->windows." -nodisp -autoexit " . escapeshellarg($audioFile);
+        passthru($cmd);
     }
 
     function convertAudio(string $sourceFile, string $targetFile, string $format = 'mp3') {

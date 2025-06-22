@@ -1,11 +1,10 @@
 <?php
-require_once($basedir . '/include/lib/util/3rdparty.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
 
 use Google\Cloud\Speech\V1\SpeechClient;
 use Google\Cloud\Speech\V1\RecognitionConfig;
 use Google\Cloud\Speech\V1\RecognitionAudio;
-
-putenv('GOOGLE_APPLICATION_CREDENTIALS='.$basedir.'/data/gca.json');
 
 class SpeechRecognation
 {
@@ -15,27 +14,31 @@ class SpeechRecognation
 
     function __construct()
     {
+        putenv("GOOGLE_APPLICATION_CREDENTIALS=" . $this->fstcore->util->data->env . "gca.json");
     }
 
     public function speech()
     {
+        $returned = "";
         $speechClient = new SpeechClient();
         // Path to local audio file
-        $audioFile = 'audio.wav';
-        $audioData = file_get_contents($audioFile);
+        $audioFile = "speech_" . $this->fstcore->util->text->random() . ".wav";
+        $returned["audio_file"] = $this->fstcore->util->data->temp . $audioFile;
+        $audioData = file_get_contents($this->fstcore->util->data->temp . $audioFile);
         // Prepare recognition audio and config
         $audio = (new RecognitionAudio())
             ->setContent($audioData);
         $config = (new RecognitionConfig())
             ->setEncoding(RecognitionConfig\AudioEncoding::LINEAR16)
             ->setSampleRateHertz(16000)
-            ->setLanguageCode('en-US');
+            ->setLanguageCode("en-US");
         // Recognize speech
         $response = $speechClient->recognize($config, $audio);
         foreach ($response->getResults() as $result) {
-            echo 'Transcript: ' . $result->getAlternatives()[0]->getTranscript() . PHP_EOL;
+            $returned["transcript"] .= $result->getAlternatives()[0]->getTranscript() . PHP_EOL;
         }
         $speechClient->close();
+        return $returned;
     }
 
     function __destruct()

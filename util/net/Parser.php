@@ -1,8 +1,9 @@
 <?php
-require_once($basedir.'/include/lib/util/3rdparty.php');
-require_once($basedir.'/include/lib/util/net/Http.php');
-require_once($basedir.'/include/lib/util/text/Text.php');
-require_once($basedir.'/include/lib/util/database/Database.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
+require_once($basedir.'/lib/util/net/Http.php');
+require_once($basedir.'/lib/util/text/Text.php');
+require_once($basedir.'/lib/util/database/Database.php');
 
 class Parser
 {

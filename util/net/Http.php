@@ -1,6 +1,8 @@
 <?php
-require_once($basedir.'/include/lib/util/filesystem/FileSystem.php');
-require_once($basedir.'/include/lib/util/net/UserAgent.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
+require_once($basedir . '/lib/util/filesystem_/FileSystem_.php');
+require_once($basedir.'/lib/util/net/UserAgent.php');
 
 class Http
 {

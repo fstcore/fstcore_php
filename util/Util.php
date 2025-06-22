@@ -1,28 +1,28 @@
 <?php
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/util/adsense/Ads.php');
+require_once($basedir . '/lib/util/audio/Audio.php');
+require_once($basedir . '/lib/util/data/Data.php');
+require_once($basedir . '/lib/util/database/Database.php');
+require_once($basedir . '/lib/util/debug/Debug.php');
+require_once($basedir . '/lib/util/encoder/Encoder.php');
+require_once($basedir . '/lib/util/filesystem_/FileSystem_.php');
+require_once($basedir . '/lib/util/image/Image.php');
+require_once($basedir . '/lib/util/net/Host.php');
+require_once($basedir . '/lib/util/net/Http.php');
+require_once($basedir . '/lib/util/net/Parser.php');
+require_once($basedir . '/lib/util/net/Smtp.php');
+//require_once($basedir . '/lib/util/net/Socket.php');
+require_once($basedir . '/lib/util/net/UserAgent.php');
+require_once($basedir . '/lib/util/proccess/Proccess_.php');
+require_once($basedir . '/lib/util/proccess/ThreadStart.php');
+require_once($basedir . '/lib/util/proccess/ThreadUtility.php');
+require_once($basedir . '/lib/util/system_/System_.php');
+require_once($basedir . '/lib/util/text/Random.php');
+require_once($basedir . '/lib/util/text/Text.php');
 
-$basedir = preg_replace('/\/include.*/', '', __DIR__);
-require_once($basedir.'/include/lib/util/adsense/Ads.php');
-require_once($basedir.'/include/lib/util/audio/Audio.php');
-require_once($basedir.'/include/lib/util/data/Data.php');
-require_once($basedir.'/include/lib/util/database/Database.php');
-require_once($basedir.'/include/lib/util/debug/Debug.php');
-require_once($basedir.'/include/lib/util/encoder/Encoder.php');
-require_once($basedir.'/include/lib/util/filesystem_/FileSystem.php');
-require_once($basedir.'/include/lib/util/image/Image.php');
-require_once($basedir.'/include/lib/util/net/Host.php');
-require_once($basedir.'/include/lib/util/net/Http.php');
-require_once($basedir.'/include/lib/util/net/Parser.php');
-require_once($basedir.'/include/lib/util/net/Smtp.php');
-require_once($basedir.'/include/lib/util/net/Socket.php');
-require_once($basedir.'/include/lib/util/net/UserAgent.php');
-require_once($basedir.'/include/lib/util/proccess_/Proccess.php');
-require_once($basedir.'/include/lib/util/proccess_/ThreadStart.php');
-require_once($basedir.'/include/lib/util/proccess_/ThreadUtility.php');
-require_once($basedir.'/include/lib/util/system_/System_.php');
-require_once($basedir.'/include/lib/util/text/Random.php');
-require_once($basedir.'/include/lib/util/text/Text.php');
-
-class Util{
+class Util
+{
 
     public $ads;
     public $audio;
@@ -51,7 +51,8 @@ class Util{
     public $debug;
     public $fstcore;
 
-    function __construct(){
+    function __construct()
+    {
         //INIT CLASS
         $this->ads = new Ads();
         $this->audio = new Audio();
@@ -67,8 +68,8 @@ class Util{
         $this->http = new Http();
         $this->parser = new Parser();
         $this->smtp = new Smtp();
-        $this->socket = new Socket();
-        $this->socketcallbackutility = new SocketCallBackUtility();
+        //$this->socket = new Socket();
+        //$this->socketcallbackutility = new SocketCallBackUtility();
         $this->useragent = new UserAgent();
         $this->websocket = new WebSocket();
         $this->proccess = new Proccess();
@@ -77,7 +78,7 @@ class Util{
         $this->system_ = new System();
         $this->random = new Random();
         $this->text = new Text();
-        
+
         //SET FSTCORE
         $this->ads->fstcore = $this->fstcore;
         $this->audio->fstcore = $this->fstcore;
@@ -133,8 +134,5 @@ class Util{
 
     function __destruct()
     {
-        
     }
 }
-
-?>

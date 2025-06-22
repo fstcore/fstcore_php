@@ -1,6 +1,7 @@
 <?php
-require_once($basedir.'/include/lib/util/3rdparty.php');
-require_once($basedir.'/include/lib/util/filesystem/FileSystem.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
+require_once($basedir . '/lib/util/filesystem_/FileSystem_.php');
 //require("phpmailer/PHPMailer.php");
 //require("phpmailer/SMTP.php");
 //require("phpmailer/Exception.php");

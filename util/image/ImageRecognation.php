@@ -1,5 +1,6 @@
 <?php
-require_once($basedir . '/include/lib/util/3rdparty.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
 
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 

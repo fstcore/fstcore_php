@@ -1,14 +1,15 @@
 <?php
-require_once($basedir . '/include/lib/util/3rdparty.php');
+$basedir = preg_replace('/\\\lib.*|\/lib.*/', '', __DIR__);
+require_once($basedir . '/lib/thirdparty/ThirdParty.php');
 
 class Image{
 
     public $debug;
     public $fstcore;
-    private $ffmpeg_app = ""
+    private $ffmpeg_app;
     
     function __construct(){
-        $this->ffmpeg_app = $fstcore->data
+        $this->ffmpeg_app = $this->fstcore->data;
     }
 
     function convertImage(string $sourcePath, string $destinationPath, string $outputFormat, int $quality = 90): bool {

@@ -13,7 +13,7 @@ require_once($basedir . '/lib/util/net/Http.php');
 require_once($basedir . '/lib/util/net/Parser.php');
 require_once($basedir . '/lib/util/net/Smtp.php');
 //require_once($basedir . '/lib/util/net/Socket.php');
-require_once($basedir . '/lib/util/net/UserAgent.php');
+//require_once($basedir . '/lib/util/net/UserAgent.php');
 require_once($basedir . '/lib/util/proccess/Proccess_.php');
 require_once($basedir . '/lib/util/proccess/ThreadStart.php');
 require_once($basedir . '/lib/util/proccess/ThreadUtility.php');
@@ -70,7 +70,7 @@ class Util
         $this->smtp = new Smtp();
         //$this->socket = new Socket();
         //$this->socketcallbackutility = new SocketCallBackUtility();
-        $this->useragent = new UserAgent();
+        //$this->useragent = new UserAgent();
         $this->websocket = new WebSocket();
         $this->proccess = new Proccess();
         $this->threadstart = new ThreadStart();
